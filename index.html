@@ -2,175 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta property="og:title" content="신년운세 by 르탄!" />
-    <meta property="og:description" content="2021년 띠 별 운세를 알려드립니다" />
-    <meta property="og:image" content="https://new-year.spartacodingclub.kr/images/ogimage.png" />
-    <link rel="shortcut icon" href="https://new-year.spartacodingclub.kr/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>2021년 신년운세</title>
-    <script type="text/javascript" src="https://new-year.spartacodingclub.kr/newyear.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 추억을 공유합니다.</title>
 
-    <style>
-        .mytitle {
-            color: darkred;
-            text-align: center;
-            margin-top: 100px;
-            margin-bottom: 50px;
-        }
+    <meta property="og:title" content="김지혜님의 추억사진"/>
+    <meta property="og:description" content="내가 추억소환 웹페이지!"/>
+    <meta property="og:image" content="image.jpg"/>
 
-        .mytitle>h1 {
-            font-size: 56px;
-            margin-bottom: 0;
-        }
-
-        body {
-            background-color: ivory;
-            background-image: url('https://new-year.spartacodingclub.kr/images/pattern.png');
-            background-position: 600px 100px;
-            background-repeat: no-repeat;
-        }
-
-        * {
-            font-family: 'Yeon Sung', cursive;
-        }
-
-        .rtans>a {
-            display: block;
-            width: 150px;
-            height: 150px;
-            border: solid 3px darkred;
-            background-color: white;
-            box-shadow: 0px 0px 10px 0px darkred;
-            border-radius: 150px;
-            margin: 10px;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-size-adjust: 24px;
-            text-decoration-line: none;
-            text-align: center
-        }
-
-        .rtan1 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS1.png');
-        }
-
-        .rtan2 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS2.png');
-        }
-
-        .rtan3 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS3.png');
-        }
-
-        .rtan4 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS4.png');
-        }
-
-        .rtan5 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS5.png');
-        }
-
-        .rtan6 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS6.png');
-        }
-
-        .rtan7 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS7.png');
-        }
-
-        .rtan8 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS8.png');
-        }
-
-        .rtan9 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS9.png');
-        }
-
-        .rtan10 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS10.png');
-        }
-
-        .rtan11 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS11.png');
-        }
-
-        .rtan12 {
-            background-image: url('https://new-year.spartacodingclub.kr/images/yearS12.png');
-        }
-
-        .rtans {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 1200px;
-            margin: auto;
-        }
-
-        .rtans>a:hover {
-            background-color: darkred;
-        }
-
-        @media screen and (max-width: 780px) {
-            body {
-                background-position: 70px -70px;
-                background-size: 500px;
-            }
-
-            .rtans {
-                width: 100%;
-            }
-
-            .mytitle {
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-
-            .rtans>a {
-                color: darkred;
-            }
-        }
-    </style>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
 </head>
+<style>
+    * {
+        font-family: 'Hi Melody', cursive
+    }
 
+    .mytitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
 
+    .btn {
+        width: 300px;
+        height: 40px;
 
+        border: 2px solid #e8344e;
 
+        text-decoration: none;
+        text-align: center;
 
+        line-height: 40px;
 
+        color: #e8344e;
+        font-weight: bold;
 
+        border-radius: 40px;
+    }
 
+    .btn:hover {
+        background-color: #e8344e;
+        color: white;
+    }
 
+    .box {
 
+        width: 1000px;
 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin: 40px auto 0px auto;
+    }
+
+    .map {
+        width: 500px;
+        height: 500px;
+
+        margin-right: 30px;
+
+        border-radius: 24px;
+    }
+
+    .story {
+        width: 500px;
+        height: 500px;
+    }
+
+    .img {
+        width: 450px;
+        height: 300px;
+
+        background-image: url('image.jpg');
+        background-position: center;
+        background-size: cover;
+
+        border-radius: 20px;
+    }
+
+    .story>h2 {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .story>h3 {
+        margin: 5px 0px 0px 0px;
+        font-size: 16px;
+        color: gray;
+
+        font-weight: normal;
+    }
+
+    .story>p {
+        line-height: 24px;
+    }
+
+    @media screen and (max-width: 640px) {
+        h1 {
+            font-size: 26px;
+        }
+
+        .box {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .map {
+            width: 100%;
+            height: 200px;
+
+            margin: 0;
+        }
+
+        .story {
+            width: 100%;
+            height: auto;
+
+            margin-top: 15px;
+            margin-bottom:  15px;
+        }
+
+        .img {
+            width: 100%;
+            height: 200px;
+        }
+
+    }
+</style>
 
 <body>
     <div class="mytitle">
-        <h1>2021년 신년운세</h1>
-        <h2>by 르탄, 믿거나 말거나~</h2>
+        <h1> 나의 추억을 공유합니다.</h1>
+        <a class="btn" href="http://spartacodingclub.shop/free/202105/exhibition" target="_blank">모든 수강생들의 추억 보러가기</a>
     </div>
-    <div class="rtans">
-        <a class="rtan1" href="result.html?year=1">쥐</a>
-        <a class="rtan2" href="result.html?year=2">소</a>
-        <a class="rtan3" href="result.html?year=3">호랑이</a>
-        <a class="rtan4" href="result.html?year=4">토끼</a>
-        <a class="rtan5" href="result.html?year=5">용</a>
-        <a class="rtan6" href="result.html?year=6">뱀</a>
-        <a class="rtan7" href="result.html?year=7">말</a>
-        <a class="rtan8" href="result.html?year=8">양</a>
-        <a class="rtan9" href="result.html?year=9">원숭이</a>
-        <a class="rtan10" href="result.html?year=10">닭</a>
-        <a class="rtan11" href="result.html?year=11">개</a>
-        <a class="rtan12" href="result.html?year=12">돼지</a>
+    <div class="box">
+        <div class="map" id="map"></div>
+        <div class="story">
+            <div class="img"></div>
+            <h2>애인 여동생이 데려온 세퍼트 강아지 후추</h1>
+                <h3>경기도 양평군 양동면 양동로 600
+            </h2>
+            <p>
+                애인 동생인 재민이에게 반려견이 생겼다.<br>
+                어릴 때부터 봐왔었는데 어엿한 대학생이 되어
+                반려동물을 키우게 된 재민이를 보니 기분이 남달랐던 날.<br>
+                이쁜 후추가 동생네 집에 오게 되었는데
+                너무 귀여워서 나도 설레였다.<br> 재민이는 얼마나 설레일까??
+                무럭무럭 자라길!</p>
+        </div>
     </div>
+    <script type="text/javascript"
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=535068688f1a8bca1c21a9445ede0a89"></script>
+    <script>
+        var markerPosition = new kakao.maps.LatLng(37.496658044309704, 127.70196868273351
+        )
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+            mapOption = {
+                center: markerPosition, // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
 
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        var imageSrc = "https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/2021_05_free_parents/sparta-marker.png";
+        var imageSize = new kakao.maps.Size(65, 86);
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+
+        var marker = new kakao.maps.Marker({
+            map: map,
+            position: markerPosition,
+            image: markerImage
+        });
+
+    </script>
 </body>
 
 </html>
